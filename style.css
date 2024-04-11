@@ -1,0 +1,262 @@
+body {
+    background-color: rgb(140, 255, 255);
+    background-image: url(./assets/image/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.welcome {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-text {
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+h1,
+h2 {
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.about-me {
+    margin-top: 20px;
+    /* Mengatur jarak di bagian atas elemen */
+}
+
+.about-me img {
+    width: 200px;
+    /* Mengatur lebar foto */
+    height: auto;
+    /* Menjaga proporsi aspek foto */
+    margin-top: 30px;
+    /* Menambahkan jarak antara foto dan teks */
+}
+
+.container-edu>div {
+    display: inline-block;
+    border: 50px #a0a0a0;
+    /* Menambahkan border ke setiap kontainer */
+    padding: 50px;
+    /* Menambahkan padding untuk ruang di sekitar konten */
+    margin: 10px;
+    /* Menambahkan margin di antara kontainer */
+    background: linear-gradient(to right, #ff2aad, #fca5df);
+    /* Memberi warna latar belakang putih */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Menambahkan bayangan */
+    border-radius: 20px;
+}
+
+.container-edu {
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Mengatur ruang yang sama di antara elemen */
+    align-items: flex-start;
+    /* Menjaga elemen vertikal di bagian atas kontainer */
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#pendidikan {
+    float: left;
+    /* Mengatur posisi ke kiri */
+    width: 45%;
+}
+
+#keahlian {
+    float: right;
+    /* Mengatur posisi ke kanan */
+    width: 40%;
+}
+
+
+/* Membersihkan float */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    justify-content: center;
+}
+
+.education {
+    padding-top: 60px;
+    /* Mengatur jarak antara bagian atas elemen tersebut dengan konten di dalamnya */
+}
+
+.about-me,
+.education {
+    margin-bottom: 50px;
+}
+
+.container-about {
+    display: inline-block;
+    border: 1px solid #ccc;
+    /* Menambahkan border ke setiap kontainer */
+    padding: 20px;
+    /* Menambahkan padding untuk ruang di sekitar konten */
+    margin: 10px;
+    /* Menambahkan margin di antara kontainer */
+    background: linear-gradient(to right, #f88dcf, #faf1f7);
+    /* Memberi warna latar belakang putih */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Menambahkan bayangan */
+    border-radius: 70px;
+    /* Menghilangkan siku pada setiap sisi container */
+    top: 50%;
+}
+
+.about-me p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#about {
+    padding-top: 55px;
+}
+
+.porto {
+    margin-top: 50px;
+}
+
+.porto h2 {
+    color: #333;
+    margin-bottom: 30px;
+    padding-top: 60px;
+}
+
+.porto img {
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-right: 65px;
+    margin-left: 65px;
+}
+
+.porto iframe {
+    clear: both;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 300px;
+    /* Merubah lebar iframe */
+    height: 200px;
+    /* Merubah tinggi iframe */
+}
+
+
+/* Reset CSS */
+
+
+/*footer*/
+
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Styling Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0px 0;
+}
+
+.container-footer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info p {
+    margin: 0 20px;
+    /* Memberi jarak antara setiap elemen */
+    max-width: 200px;
+    /* Mengatur lebar maksimum untuk memicu pemisahan baris jika diperlukan */
+    font-size: 14px;
+    margin: 5px 40px 5px;
+    text-align: center;
+}
+
+.contact-info p strong {
+    text-align: center;
+    display: block;
+}
+
+.copyright p {
+    font-size: 15px;
+    text-align: left;
+}
